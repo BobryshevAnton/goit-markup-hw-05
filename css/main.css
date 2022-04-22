@@ -82,8 +82,8 @@ p {
 }
 
 .modal {
-   width: 457px;
-   height: 586px;
+   width: 528px;
+   height: 581px;
    content: "";
    background-color: #FFFFFF;
    border-radius: 4px;
@@ -105,7 +105,10 @@ p {
    position: absolute;
    top: 8px;
    right: 8px;
-
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
 }
 
 
