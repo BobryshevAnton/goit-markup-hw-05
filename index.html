@@ -3,7 +3,7 @@
 
 <head>
    <meta charset="utf-8">
-   <title>GoIt Home Work4</title>
+   <title>GoIt Home Work5</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
@@ -14,7 +14,7 @@
 </head>
 
 <body class="page">
-   <!--загальний стайл body-->
+
    <header class="section header">
       <div class="container header-conteiner">
          <nav class="header-list">
@@ -54,7 +54,7 @@
 
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
 
-            <button type="button" class="hero-button" name="Order services">Заказать услугу</button>
+            <button type="button" class="hero-button" name="Order services" data-modal-open>Заказать услугу</button>
 
          </div>
       </section>
@@ -123,23 +123,26 @@
             <ul class="work-title-img">
 
                <li class="work-img">
-                  <a class="work-link" href="">
-                     <img class="pict" src="./img/box1.jpg" alt="Desk top" width="370" height="294">
-                  </a>
+
+                  <img class="pict" src="./img/box1.jpg" alt="Desk top" width="370" height="294">
+                  <p class="work-label">Десктопные приложения</p>
+
                </li>
 
                <li class="work-img">
-                  <a class="work-link" href="">
-                     <img class="pict" src="./img/box2.jpg " alt="Mobile phone" width="370" height="294">
-                  </a>
+
+                  <img class="pict" src="./img/box2.jpg " alt="Mobile phone" width="370" height="294">
+                  <p class="work-label">Мобильные приложения</p>
+
                </li>
 
                <li class="work-img">
-                  <a class="work-link" href="">
-                     <img class="pict" src="./img/box3.jpg " alt="Tabl" width="370" height="294">
-                  </a>
+
+                  <img class="pict" src="./img/box3.jpg " alt="Tabl" width="370" height="294">
+                  <p class="work-label">Дизайнерские решения</p>
                </li>
             </ul>
+
          </div>
       </section>
 
@@ -192,7 +195,6 @@
                         </li>
                      </ul>
 
-
                <li class="personal-pict"><img src="./img/card2.jpg" alt="Desk top" width="270">
                   <div class="personal-title">
                      <h3 class="personal-name">Ольга Репина</h3>
@@ -236,9 +238,7 @@
                         </li>
                      </ul>
                   </div>
-
                </li>
-
 
                <li class="personal-pict"><img src="./img/card3.jpg" alt="Desk top" width="270">
                   <div class="personal-title">
@@ -335,7 +335,6 @@
          </div>
       </section>
 
-
       <!--секція Постійні клієнти-->
       <section class="section client">
          <div class="container client-general">
@@ -384,7 +383,6 @@
 
    <!--секція Футер-->
    <footer class="section footer">
-
 
       <div class="container footerstyle">
 
@@ -445,6 +443,18 @@
          </div>
       </div>
    </footer>
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button class="modal-btn" data-modal-close>
+            <svg class="modal-icon" width="11" height="11">
+               <use href="./img/icon/icons.svg#icon-close-black"></use>
+            </svg>
+         </button>
+      </div>
+   </div>
+
+
+   <script src="./modal.js"></script>
 </body>
 
 </html>
