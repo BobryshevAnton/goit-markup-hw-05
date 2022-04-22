@@ -178,15 +178,17 @@ p {
    display: flex;
    position: relative;
    transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .link:hover {
    color: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.link:hover:after {
+.link:hover::after {
    position: absolute;
    bottom: -1px;
    content: "";
@@ -263,6 +265,8 @@ p {
    display: flex;
    align-items: center;
    transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -270,21 +274,21 @@ p {
    fill: var(--main-text-color);
    margin-right: 10px;
    transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .info-link:hover,
 .info-link:focus {
    color: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
 .info-link:hover .info-icon {
    fill: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -351,13 +355,14 @@ p {
    border: none;
    background-color: var(--accent-color);
    transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
    background-color: rgba(33, 150, 243, 1);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -597,6 +602,8 @@ section.work {
    justify-content: center;
    border: none;
    transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -604,22 +611,20 @@ section.work {
    display: flex;
    fill: rgba(175, 177, 184, 1);
    transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .socials:hover,
 .socials:focus {
    background-color: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .socials:hover .social-icon,
 .socials:focus .social-icon {
    fill: var(--main-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -660,7 +665,9 @@ section.work {
    align-items: center;
    justify-content: center;
    transition-property: border;
-   /*!!!!!!!!!!!!!!!!!!!*/
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .client-card {
@@ -674,6 +681,8 @@ section.work {
 .client-icon {
    fill: rgba(175, 177, 184, 1);
    transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -681,14 +690,12 @@ section.work {
 .client-link:hover,
 .client-link:focus {
    border-color: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .client-link:hover .client-icon {
    fill: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* стиль Футер-------------------------------------*/
@@ -751,21 +758,21 @@ section.work {
    text-decoration: none;
    font-style: normal;
    transition-property: color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-footer:hover,
 .mail-footer:focus {
    color: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
 .tel-footer:hover,
 .tel-footer:focus {
    color: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .common {
@@ -813,13 +820,14 @@ section.work {
    align-items: center;
    justify-content: center;
    transition-property: background-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .common-logo:hover,
 .common-logo:focus {
    background-color: var(--accent-color);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 
@@ -847,6 +855,8 @@ section.work {
    padding-bottom: 6px;
    border-radius: 4px;
    border: none;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-list:not(:last-child) {
@@ -868,8 +878,7 @@ section.work {
    color: var(--main-color);
    background-color: var(--accent-color);
    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 /* стиль ПОРТФОЛІО-------------------------------*/
@@ -942,14 +951,16 @@ section.work {
 .portfolio-link {
    display: block;
    transition-property: box-shadow;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .portfolio-link:hover,
 .portfolio-link:focus {
 
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
